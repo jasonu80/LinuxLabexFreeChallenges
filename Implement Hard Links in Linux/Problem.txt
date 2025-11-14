@@ -16,3 +16,5 @@ $ ls -li /home/labex/hard1 /home/labex/hard2 /home/labex/hard3
 1234567 -rw-r--r-- 3 labex labex 7 Aug 28 10:00 /home/labex/hard2
 1234567 -rw-r--r-- 3 labex labex 7 Aug 28 10:00 /home/labex/hard3
 
+Additional Description: 
+  The number at the beginning is the inode number, which will be the same for all hard links to the same file. Note that the link count is 3 for all files.
