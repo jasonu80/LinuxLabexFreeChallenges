@@ -1,0 +1,17 @@
+Title: Log in and Switch Users
+Description: 
+  Switch to the `root` user using `sudo`
+  Create a new user named `projectuser`
+  Switch to the `projectuser` account
+  Return to the `labex` user account
+Requirements:
+  You are already logged in as the `labex` user
+  All operations should be performed in the terminal
+  Use the `sudo` command to switch to the `root` user
+  Create the `projectuser` with a home directory in `/home/projectuser`
+  Set the password for `projectuser` to `project123`
+  Use the `su` command to switch between users
+  Ensure you end up logged in as the `labex` user
+Output:
+$ whoami
+labex    pts/0        2023-08-28 10:00 (:0)
