@@ -1,0 +1,18 @@
+Title: Creating and Manipulating Hard Links
+Description:
+  Create an empty file named `hard1`
+  Create two hard links to `hard1`: `hard2` and `hard3`
+  Add content to `hard2`
+Requirements:
+  All files must be created in the `/home/labex` directory
+  Create `hard1` using the `touch` command
+  Create `hard2` and `hard3` using the `ln` command
+  Add the content "Redhat" to `/home/labex/hard2`
+  Use `ls -li` to display file attributes of all three files
+Output:
+
+$ ls -li /home/labex/hard1 /home/labex/hard2 /home/labex/hard3
+1234567 -rw-r--r-- 3 labex labex 7 Aug 28 10:00 /home/labex/hard1
+1234567 -rw-r--r-- 3 labex labex 7 Aug 28 10:00 /home/labex/hard2
+1234567 -rw-r--r-- 3 labex labex 7 Aug 28 10:00 /home/labex/hard3
+
