@@ -1,0 +1,22 @@
+Title: Create and Extract Tar Archives
+Description:
+  Create gzip and bzip2 compressed tar archives of the `/home` directory
+  List the contents of both archives
+  Extract both archives
+Requirements:
+  Perform all operations in the `/home/labex` directory
+  Create the following archives:
+    Gzip-compressed: `/home/labex/home.tar.gz`
+    Bzip2-compressed: `/home/labex/home.tar.bz2`
+  List the contents of both archives in `/home/labex`
+  Extract both archives to `/home/labex/extracted`
+  Use the `tar` command with appropriate options for all operations
+
+Output:
+$ tar -tvf /home/labex/home.tar.gz
+drwxr-xr-x root/root         0 2023-08-28 10:00 home/
+drwx------ labex/labex       0 2023-08-28 10:00 home/labex/
+-rw-r--r-- labex/labex     220 2023-08-28 10:00 home/labex/.bash_logout
+-rw-r--r-- labex/labex    3771 2023-08-28 10:00 home/labex/.bashrc
+-rw-r--r-- labex/labex     807 2023-08-28 10:00 home/labex/.profile
+
