@@ -1,1 +1,24 @@
+Title: Manage File Permissions
 
+Description: 
+  Create a new file named `perm_file1` in the `/home/labex` directory.
+  Set initial read permissions for owner, group, and other.
+  Add execute permission for the owner and write permissions for group and other.
+  Revoke the write bit from other (public).
+  Assign read, write, and execute bits to all three user categories simultaneously.
+  Revoke write permission from the owning group and revoke both write and execute bits from other (public).
+
+Requirements: 
+  All operations must be performed in the `/home/labex` directory.
+    Use the `touch` command to create the file.
+    Use the `chmod` command with both symbolic and octal notation to modify permissions as follows:
+    Initially set permissions to read-only (444) for all user categories.
+    Use symbolic notation for all subsequent permission changes.
+    The final permissions for perm_file1 should be:
+      Owner: read, write, and execute (rwx)
+      Group: read and execute (r-x)
+      Other: read only (r--)
+
+Output:
+$ ls -l perm_file1
+-rwxr-xr-- 1 labex labex 0 Aug 28 07:14 perm_file1
