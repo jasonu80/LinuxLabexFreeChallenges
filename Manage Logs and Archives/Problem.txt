@@ -1,0 +1,17 @@
+Title: Manage Logs and Archives
+Description:
+  Find all log messages in `~/logs/messages` that contain "ACPI"
+  Export the found messages to a file called `~/acpi_logs`
+  Archive all of `~/logs` and save it to `~/log_archive.tgz`
+Requirements:
+  All operations must be performed as the `labex` user
+  The log search must be case-sensitive
+  The exported log file must be named `acpi_logs` and located in your home directory (`~`)
+  The archive must be a gzipped tar file named `log_archive.tgz` and located in your home directory (`~`)
+  The archive must include all files and subdirectories in `~/logs/`
+
+Output:
+$ cat ~/acpi_logs
+May 15 10:23:45 localhost kernel: ACPI: Power Button [PWRB]
+May 15 11:34:56 localhost kernel: ACPI: Sleep Button [SLPB]
+May 15 12:45:67 localhost kernel: ACPI: AC Adapter [AC] (on-line)
