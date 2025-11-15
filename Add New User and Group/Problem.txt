@@ -1,0 +1,19 @@
+Title: Add New User and Group
+Description: 
+  Create new groups named `dev` and `test`.
+  Add a new user account named `jack` with a home directory of `/home/jack`, primary group `dev`, and secondary group `labex`.
+  Add a new user account named `bob` with a home directory of `/home/bob`, primary group `test`, and secondary group `labex`.
+Requirements:
+  Use the `labex` user, which has `sudo` privileges and belongs to the `labex` user group, to perform these tasks.
+  Ensure that the new groups `dev` and `test` are created before adding the users.
+  Ensure that the new users are created with their respective home directories and group memberships.
+  You can choose either of these approaches:
+    Create groups first, then create users, and finally add them to groups
+    Create users with their group memberships in a single command
+
+Output:
+$ id jack
+uid=5001(jack) gid=5003(dev) groups=5003(dev),5000(labex)
+
+$ id bob
+uid=5002(bob) gid=5004(test) groups=5004(test),5000(labex)
