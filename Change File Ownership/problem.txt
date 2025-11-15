@@ -1,0 +1,20 @@
+Title: Change File Ownership
+
+Description 1: 
+  Create a file named `target_file` in the `~/project` directory.
+Output: 
+$ cd ~/project && ls
+target_file
+------------------------------------------------------------------
+Description 2:
+  Change the owner of `target_file` to `user1`.
+  Change the group of `target_file` to `group1`.
+Output:
+$ ls -l ~/project/target_file
+-rw-rw-r-- 1 user1 group1 0 Jul 29 10:59 target_file
+------------------------------------------------------------------
+Description 3:
+  Set the permissions of `target_file` to `-rwxrw----`.
+Output:
+$ ls -l ~/project/target_file
+-rwxrw---- 1 user1 group1 0 Jul 29 10:59 target_file
