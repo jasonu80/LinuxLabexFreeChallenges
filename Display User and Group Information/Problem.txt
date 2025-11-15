@@ -1,0 +1,8 @@
+Title: Display User and Group Information
+
+Description: 
+  Display your current user identity.
+Output: 
+
+$ ??????????
+labex  
