@@ -1,8 +1,15 @@
 Title: Display User and Group Information
 
-Description: 
+Description 1: 
   Display your current user identity.
 Output: 
 
 $ ??????????
 labex  
+---------------------------------------------
+Description 2:
+  Display user and group information.
+Output:
+
+$ ???????????
+uid=1000(labex) gid=1000(labex) groups=1000(labex),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
